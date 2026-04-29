@@ -2,10 +2,6 @@ Snake Game (Phase 2)
 
 This project is a browser-based Snake Game developed as part of my Web Technologies coursework.
 
-Live Demo
-
-https://mrtcornish.github.io/Snake-Game-2/
-
 Features
 
 * Classic snake movement and growth
