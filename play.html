@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snake Game - Play</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="play.html">Play</a> |
+    <a href="about.html">About</a>
+  </nav>
+
+  <main class="game-page">
+    <h1>Snake Game</h1>
+    <p class="subtitle">Phase 2: Speed Scaling, Obstacles & UI Upgrade</p>
+
+    <section class="panel">
+      <div class="stats">
+        <div class="stat-box">Score: <span id="score">0</span></div>
+        <div class="stat-box">High Score: <span id="high-score">0</span></div>
+        <div class="stat-box">Speed: <span id="speed-label">150ms</span></div>
+        <div class="stat-box">Level: <span id="level-label">1</span></div>
+        <div class="stat-box bonus-timer-box">Boost Timer: <span id="bonus-timer">--</span></div>
+      </div>
+
+      <div class="controls">
+        <button id="start-btn">Start</button>
+        <button id="pause-btn" disabled>Pause</button>
+        <button id="restart-btn">Restart</button>
+        <button id="sound-toggle">Sound: ON</button>
+      </div>
+
+      <p class="hint">
+        Controls: Arrow Keys. Tip: You can’t reverse direction instantly.
+      </p>
+    </section>
+
+    <section id="game-container">
+      <div id="countdown" class="hidden">3</div>
+      <div id="game-board"></div>
+
+      <div id="overlay" class="hidden">
+        <div class="overlay-card">
+          <h2>Game Over</h2>
+          <p>Final Score: <span id="final-score">0</span></p>
+          <p>High Score: <span id="final-high-score">0</span></p>
+          <button id="overlay-restart-btn">Play Again</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Thaddeus Cornish Jr. | SET08801 Web Technologies</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
